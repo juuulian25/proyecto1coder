@@ -254,9 +254,6 @@
 
 
 
-
-
-
 header{
     background-color: #D97F89;
   
@@ -534,9 +531,6 @@ header{
 
 @media screen and (max-width: 600px){
 
-  
-
-
 
     .flex__nav{
         flex-direction: column;
@@ -777,14 +771,13 @@ header{
     .flex__table_contactanos{
         display: flex;
        justify-content: center;
-    
+    border-color: 5px solid #D97F89;
     }
 
     .mapa__redondo{
         width: 400px;
         height: 400px;
         border-radius: 30px;
-      
         
     }
 
