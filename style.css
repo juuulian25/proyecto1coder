@@ -336,12 +336,6 @@ header{
 }
 
 
-.flex__table_contactanos{
-    display: flex;
-   justify-content: center;
-  
-}
-
 .mapa__redondo{
     width: 600px;
     height: 600px;
@@ -512,10 +506,7 @@ header{
     
     }
 
-    .flex__table_contactanos{
-        display: flex;
-       justify-content: center;
-    }
+
 
     .mapa__redondo{
         width: 400px;
@@ -768,11 +759,6 @@ header{
     
     }
 
-    .flex__table_contactanos{
-        display: flex;
-       justify-content: center;
-    border-color: 5px solid #D97F89;
-    }
 
     .mapa__redondo{
         width: 400px;
@@ -784,5 +770,4 @@ header{
 
 
 }
-
 
