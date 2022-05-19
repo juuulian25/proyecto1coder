@@ -1,0 +1,97 @@
+.tamano_foto_carrousel{
+    width: 200px;
+    height: 200px;
+
+}
+
+
+.seccion {
+    width: 100%;
+    padding: 1rem;
+}
+
+/*flexbox*/
+
+.flex{
+
+    text-decoration: none;
+    display: flex;
+    flex-direction: row; /*viene por defecto*/
+
+}
+
+.colorFondo{
+    background-color:#FAD7D1 ;
+}
+
+
+
+.tamanoImg {
+    width: 90px;
+    height: 90px;
+}
+
+.tamanoFotoArtistas{
+    width: 200px;
+    height: 200px;
+}
+
+
+.redondo {
+    border: 15px solid white;
+}
+
+
+
+.tamanoFuente{
+    font-size: 50px;
+    color:black;
+
+}
+
+.fuenteTitulo{
+    padding-left: 20px;   
+    font-family: $fuente__principal;
+}
+
+
+
+.fuenteTablaArtistas{
+    font-size: 30px;
+  
+}
+
+.fuenteQuienesSomos{
+    font-size: 20px;
+    color: $color__principal;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 30px;
+}
+
+
+.fuenteIndex{
+    font-size: 20px;
+    font-family: $fuente__principal;
+    color: $color__principal;
+    text-align: center;
+    line-height: 2;
+}
+
+
+.tamanoFoto{
+   width: 100px;
+   height: 100px;
+}
+
+
+.mapa__redondo{
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+
+}
+
+.cerrar__jam{
+    display: none;
+}

@@ -1,0 +1,551 @@
+
+/*medias queris*/
+
+@media screen and (max-width: 1023px) {
+   
+
+    .flex__nav{
+        flex-direction: column;
+    }
+
+    .flex__footer{
+        display: flex;
+        flex-direction: row;
+        font-family: $fuente__principal;
+        font-size: 25px;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+   
+
+    .flex__links{
+        display: none;        
+         font-size: 25px;
+         height: 55px;
+         padding-top: 80px;
+         display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+     }
+
+
+        .tamanoFoto{
+            width: 10px;
+            height: 10px;
+         }
+         
+     
+        
+        .fuenteTablaArtistas{
+            font-size: 20px;
+              
+        }
+   
+
+    .grid_nuestas_artistas{
+        display: grid;
+      
+        justify-content: center ;
+        /*background-image: url(../imagenes/Shiny\ Overlay.svg);*/
+        padding: 5px;
+        border-top: 5px;
+        border-left: 5px;
+        border-width: 5px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+    
+    
+        grid-template-areas:
+        "ela1"
+        "ela2"
+        "ela3"
+        "ela4"
+        "ela5"
+        "ela6"
+        ;
+    
+    }
+
+    .grid__hijos_artistas{
+        align-items: center;
+        align-content: center;
+        padding: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .indexPrueba{
+        
+        display: grid;
+        min-height:300px;
+        grid-template-columns: 30% 30% 30% ;
+        grid-template-rows: 150px 150px 150px;
+      
+       
+      
+        grid-template-areas: 
+        "ala1 ala2 ala2"
+        "ala3 ala3 ala4"
+        "ala5 ala5 ala6" ;
+
+        
+
+    &__hijo1{
+        grid-area: ala1 ;
+        font-size: 20px;
+        background-color:$color__principal;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+       
+    }
+    
+    &__hijo2{
+        grid-area: ala2 ;
+        font-size: 20px;
+        background-color: #f57d90;
+        align-items: center;
+        align-content: center;
+       padding: 1rem;
+
+       
+    }
+    
+    &__hijo3{
+        grid-area: ala3 ;
+        font-size: 20px;
+        background-color: #f1889b;
+        align-items: center;
+        align-content: center;
+        padding: 1rem;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    
+    &__hijo4{
+        grid-area: ala4 ;
+        font-size: 20px;
+        background-color: #f99aaa;
+        align-items: center;
+        align-content: center;
+        padding: 1rem;
+      
+    }
+    
+    &__hijo5{
+        grid-area: ala5 ;
+        font-size: 20px;
+        background-color: #fdb4bf;
+        align-items: center;
+        align-content: center;
+        padding: 1rem;
+       
+       
+    }
+    
+    &__hijo6{
+        grid-area: ala6 ;
+        font-size: 20px;
+        background-color: #ffcdd4;
+        align-items: center;
+        align-content: center;
+        padding: 1rem;
+       
+    
+    }
+
+
+    }
+
+
+
+ .tamanoFotoArtistas{
+        width: 150px;
+        height: 150px;
+    }
+    
+
+    .grid { 
+        border: 1px;
+        width: 100%;
+        min-height: 800px;
+        display:grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 25% 25% 25% 25%;
+        justify-content: center;
+        margin: 0;
+        row-gap: 5px;
+        padding: 10px;
+        grid-template-areas:  
+        "ele6 ele2"
+        "ele3 ele5"
+        "ele7 ele8"
+        "ele4 ele1";
+
+
+        &__hijo img {
+            width: 95%;
+            height: 95%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+
+
+    }
+    
+   
+
+
+    .tamanoFuente{
+        font-size: 45px;
+        color:black;    
+    }
+
+    .fuenteTitulo{
+        padding-left: 15px;   
+        font-family: 'Ms Madi', cursive;
+    }
+
+
+
+    .mapa__redondo{
+        width: 400px;
+        height: 400px;
+        border-radius: 30px;
+       
+    }
+}
+
+
+
+/*media queris mobile*/
+
+@media screen and (max-width: 600px){
+
+
+  
+
+
+    .tamanoFoto{
+        width: 50px;
+        height: 50px;
+     }
+     
+    
+    .fuenteTablaArtistas{
+        font-size: 20px;
+          
+        }
+
+
+    .indexPrueba{
+
+        width: 100%;
+        padding: 1rem;
+        width: 100%;
+        height: 650px;
+        min-height: 100vh;
+        display: grid;
+        
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+        grid-template-areas: 
+        "ala1"
+        "ala2"
+        "ala3"
+        "ala4"
+        "ala5"
+        "ala6" 
+
+    }
+
+    .indexPrueba__hijo1{
+        grid-area: ala1 ;
+        font-size: 20px;
+        background-color:$color__principal;
+    
+    }
+    
+    .indexPrueba__hijo2{
+        grid-area: ala2 ;
+        font-size: 20px;
+        background-color: #f57d90;
+        
+    }
+    
+    .indexPrueba__hijo3{
+        grid-area: ala3 ;
+        font-size: 20px;
+        background-color: #f1889b;
+        
+    }
+    
+    .indexPrueba__hijo4{
+        grid-area: ala4 ;
+        font-size: 20px;
+        background-color: #f99aaa;
+        
+    }
+    
+    .indexPrueba__hijo5{
+        grid-area: ala5 ;
+        font-size: 20px;
+        background-color: #fdb4bf;
+       
+    }
+    
+    .indexPrueba__hijo6{
+        grid-area: ala6 ;
+        font-size: 20px;
+        background-color: #ffcdd4;
+    
+    }
+
+
+    .flex__links{
+        display: flex;
+        align-items: center;
+         font-size: 15px;
+        justify-content: space-between;
+        gap:1px;
+        padding: 1rem;
+    }
+    .flex__footer{
+        display: flex;
+        flex-direction: column;
+        font-family: $fuente__principal;
+        font-size: 25px;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+
+    .grid_nuestas_artistas{
+        display: grid;
+      
+        justify-content: center ;
+        /*background-image: url(../imagenes/Shiny\ Overlay.svg);*/
+        padding: 5px;
+        border-top: 5px;
+        border-left: 5px;
+        border-width: 5px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+
+        height: 100vh;
+    
+        grid-template-areas:
+        "ela1"
+        "ela2"
+        "ela3"
+        "ela4"
+        "ela5"
+        "ela6"
+        ;
+    
+    }
+
+    .grid__hijos_artistas{
+        align-items: center;
+        align-content: center;
+        padding: 3px;
+    }
+
+    .grid__hijo_artistas1{
+        grid-area: ela1;
+       
+    }
+    .grid__hijo_artistas2{
+        grid-area: ela2;
+       
+    }
+    .grid__hijo_artistas3{
+        grid-area: ela3;
+    }
+    .grid__hijo_artistas4{
+        grid-area: ela4;
+    }
+    .grid__hijo_artistas5{
+        grid-area: ela5;
+    }
+    .grid__hijo_artistas6{
+        grid-area: ela6;
+    }
+
+
+
+    .tamanoFotoArtistas{
+        width: 150px;
+        height: 150px;
+    }
+    
+
+
+    .grid { 
+        border: 1px;
+        width: 100%;
+        min-height: 800px;
+        display:grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px;
+        justify-content: center;
+        margin: 0;
+        row-gap: 5px;
+    
+        grid-template-areas:  
+        "ele6"
+        "ele2"
+        "ele3"
+        "ele5"
+        "ele7"
+        "ele8"
+        "ele4"
+        "ele1";
+    }
+    
+    .grid__hijo img {
+        width: 95%;
+        height: 95%;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+    
+    
+    
+    .grid__hijo1{
+        grid-area: ele1;
+    }
+    
+    .grid__hijo2{
+        grid-area: ele2;   
+    }
+    
+    .grid__hijo3{
+        grid-area: ele3;
+    }
+    
+    .grid__hijo4{
+        grid-area: ele4;
+    }
+    .grid__hijo5{
+        grid-area: ele5;
+    }
+    
+    .grid__hijo6{
+        grid-area: ele6;
+    }
+    
+    .grid__hijo7{
+        grid-area: ele7;
+    }
+    
+    .grid__hijo8{
+        grid-area: ele8;
+    }
+
+    .tamanoFuente{
+        font-size: 50px;
+        color:rgb(0, 0, 0);
+    
+    }
+
+
+    .mapa__redondo{
+       width: 300px;
+        height: 300px;
+        border-radius: 30px;
+    }
+
+    .columna__contactanos{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+    }
+    
+   .flex__links{
+       display: none;        
+        font-size: 25px;
+        height: 50%;
+        padding-top: 75%;
+        display: flex;
+       justify-content: flex-end;
+       align-items: flex-end;
+    }
+
+
+
+   .flex__nav{
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.header__open{
+    display:block ;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+#lateral {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.384);
+    
+    width: 90%;
+    position: fixed;
+    top: 1;
+    right: -100%;
+    z-index: 100;
+    transition: right 1.5s;
+    height: 90%;
+}
+
+#lateral:target{
+ right: 0;
+}
+
+.links{
+
+    color:$color__principal;
+   background-color: white;
+   font-size: 20px;
+  
+
+}
+
+.link__interno{
+    height: 10vh;
+    font-size: 20px;
+}
+
+
+
+.cerrar__jam{
+    display: block;
+}
+
+.tamanoFuente{
+    font-size: 40px;
+    color:black;    
+}
+
+.fuenteTitulo{
+    padding-left: 15px;   
+    font-family: $fuente__principal;
+}
+
+
+
+
+}

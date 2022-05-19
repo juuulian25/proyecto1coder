@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+header{
+    background-color: $color__principal;
+  
+    .header__open{ /*icono*/
+        display: none;
+       }
+
+
+}
+
+
+   
+
+
+.flex__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+
+
+.flex__links{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-evenly;
+    gap:16px;
+    
+    .links{
+        text-decoration: none;
+        color: black;
+        font-size: 17px;
+    }
+
+}

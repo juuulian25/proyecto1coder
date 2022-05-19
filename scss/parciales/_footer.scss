@@ -1,0 +1,22 @@
+.flex__footer{
+    display: flex;
+    flex-direction: row;
+    font-family: $fuente__principal;
+   font-size: 40px;
+    align-items: center;
+  
+    justify-content: space-evenly ;
+    
+  
+
+}
+
+
+.colorFooter{
+    background-color: #ffffff;
+}
+
+.colorRedes {
+    color:$color__principal;
+    text-decoration: none;
+}
