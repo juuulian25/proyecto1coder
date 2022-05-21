@@ -4,6 +4,8 @@
 @media screen and (max-width: 1023px) {
    
 
+
+
     .flex__nav{
         flex-direction: column;
     }
@@ -545,6 +547,16 @@
     font-family: $fuente__principal;
 }
 
+
+header{
+    background-color: $color__principal;
+  
+    .header__open{ /*icono*/
+        display: block;
+       }
+
+
+}
 
 
 

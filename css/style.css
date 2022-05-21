@@ -664,6 +664,13 @@ header .header__open {
     padding-left: 15px;
     font-family: "Ms Madi", cursive;
   }
+  header {
+    background-color: #D97F89;
+  }
+  header .header__open {
+    /*icono*/
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
