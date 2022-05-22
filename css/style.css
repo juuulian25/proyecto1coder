@@ -1,3 +1,54 @@
+.usandoEachblue {
+  background-color: blue;
+}
+
+.usandoEachyellow {
+  background-color: yellow;
+}
+
+.usandoEachorange {
+  background-color: orange;
+}
+
+.usandoEachred {
+  background-color: red;
+}
+
+.usandoEachgreen {
+  background-color: green;
+}
+
+.fondoRedesEach-facebook {
+  color: blue;
+}
+
+.fondoRedesEach-instgram {
+  color: orange;
+}
+
+.fondoRedesEach-spotify {
+  color: green;
+}
+
+.fondoRedesEach-twiiter {
+  color: lightblue;
+}
+
+.caja-chica {
+  width: 100px;
+  height: 100px;
+}
+
+.caja-mediana {
+  width: 150px;
+  height: 150px;
+}
+
+.caja-grande {
+  width: 200px;
+  height: 200px;
+}
+
 .flex__footer {
   display: flex;
   flex-direction: row;
@@ -53,6 +104,10 @@ header .header__open {
 .tamano_foto_carrousel {
   width: 200px;
   height: 200px;
+}
+
+.alturamain {
+  min-height: 100vh;
 }
 
 .seccion {

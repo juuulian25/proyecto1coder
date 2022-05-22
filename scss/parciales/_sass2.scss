@@ -1,0 +1,37 @@
+@each $colorFondoLateral in blue, yellow, orange, red, green  {
+
+    .usandoEach#{$colorFondoLateral}{
+        background-color: #{$colorFondoLateral};
+    }
+}
+
+$redes: (
+    facebook: blue,
+    instgram:  orange,
+    spotify: green,
+    twiiter: lightblue,
+);
+
+@each $clave, $valor in $redes {
+    .fondoRedesEach-#{$clave} {
+        color: $valor;
+    }
+}
+
+
+@mixin size($ancho, $altura){
+    width: $ancho ;
+    height: $altura;
+}
+
+.caja-chica{
+    @include size(100px,100px )
+}
+
+.caja-mediana{
+    @include size(150px,150px )
+}
+.caja-grande{
+    @include size(200px, 200px )
+
+}
