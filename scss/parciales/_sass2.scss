@@ -5,12 +5,14 @@
     }
 }
 
+
 $redes: (
     facebook: blue,
     instgram:  orange,
     spotify: green,
     twiiter: lightblue,
 );
+
 
 @each $clave, $valor in $redes {
     .fondoRedesEach-#{$clave} {

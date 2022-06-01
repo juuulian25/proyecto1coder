@@ -3,31 +3,27 @@
     display: grid;
     flex-direction: row;
     justify-content: center ;
-    /*background-image: url(../imagenes/Shiny\ Overlay.svg);*/
     padding: 10px;
     border-top: 10px;
     border-left: 10px;
     border-width: 10px;
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
     height: 100vh;
 
 
     grid-template-areas:
-    "ela1 ela2"
-    "ela3 ela4"
-    "ela5 ela6"
+    "ela1 ela2 ela2"
+    "ela3 ela4 ela4"
+    "ela5 ela6 ela6"
     ;
 
 }
 
 .grid__hijos_artistas{
-    align-items: center;
-    align-content: center;
+    
     padding: 1rem;
+    align-content: space-around;
+    justify-content: right;
 }
 
 .grid__hijos_img{
@@ -39,21 +35,38 @@
 
 .grid__hijo_artistas1{
     grid-area: ela1;
+    
 }
 .grid__hijo_artistas2{
+    display: grid;
     grid-area: ela2;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 }
+
 .grid__hijo_artistas3{
     grid-area: ela3;
 }
+
 .grid__hijo_artistas4{
+    display: grid;
     grid-area: ela4;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    
 }
 .grid__hijo_artistas5{
     grid-area: ela5;
 }
 .grid__hijo_artistas6{
+    display: grid;
     grid-area: ela6;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+   
 }
 
 
@@ -111,6 +124,7 @@
 
 .grid__hijo4{
     grid-area: ele4;
+
 }
 .grid__hijo5{
     grid-area: ele5;

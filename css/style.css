@@ -191,24 +191,19 @@ header .header__open {
   display: grid;
   flex-direction: row;
   justify-content: center;
-  /*background-image: url(../imagenes/Shiny\ Overlay.svg);*/
   padding: 10px;
   border-top: 10px;
   border-left: 10px;
   border-width: 10px;
   width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
   height: 100vh;
-  grid-template-areas: "ela1 ela2" "ela3 ela4" "ela5 ela6";
+  grid-template-areas: "ela1 ela2 ela2" "ela3 ela4 ela4" "ela5 ela6 ela6";
 }
 
 .grid__hijos_artistas {
-  align-items: center;
-  align-content: center;
   padding: 1rem;
+  align-content: space-around;
+  justify-content: right;
 }
 
 .grid__hijos_img {
@@ -223,7 +218,11 @@ header .header__open {
 }
 
 .grid__hijo_artistas2 {
+  display: grid;
   grid-area: ela2;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .grid__hijo_artistas3 {
@@ -231,7 +230,11 @@ header .header__open {
 }
 
 .grid__hijo_artistas4 {
+  display: grid;
   grid-area: ela4;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .grid__hijo_artistas5 {
@@ -239,7 +242,11 @@ header .header__open {
 }
 
 .grid__hijo_artistas6 {
+  display: grid;
   grid-area: ela6;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /*grid*/
@@ -356,20 +363,11 @@ header .header__open {
   .flex__nav {
     flex-direction: column;
   }
-  .flex__footer {
-    display: flex;
-    flex-direction: row;
-    font-family: "Ms Madi", cursive;
-    font-size: 25px;
-    align-items: center;
-    align-content: center;
-    justify-content: space-evenly;
-  }
   .flex__links {
     display: none;
     font-size: 25px;
     height: 55px;
-    padding-top: 80px;
+    padding-top: 11px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -384,23 +382,20 @@ header .header__open {
   .grid_nuestas_artistas {
     display: grid;
     justify-content: center;
-    /*background-image: url(../imagenes/Shiny\ Overlay.svg);*/
-    padding: 5px;
-    border-top: 5px;
-    border-left: 5px;
-    border-width: 5px;
+    padding: 1px;
+    border-top: 1px;
+    border-left: 1px;
+    border-width: 1px;
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
     height: 100vh;
     grid-template-areas: "ela1" "ela2" "ela3" "ela4" "ela5" "ela6";
   }
   .grid__hijos_artistas {
+    display: grid;
     align-items: center;
     align-content: center;
-    padding: 1rem;
+    margin: 10px;
+    padding: 10px;
     justify-content: center;
     text-align: center;
   }
@@ -412,6 +407,7 @@ header .header__open {
     grid-template-areas: "ala1 ala2 ala2" "ala3 ala3 ala4" "ala5 ala5 ala6";
   }
   .indexPrueba__hijo1 {
+    display: grid;
     grid-area: ala1;
     font-size: 20px;
     background-color: #D97F89;
@@ -499,6 +495,17 @@ header .header__open {
   }
 }
 
+.flex__footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+  font-family: "Ms Madi", cursive;
+  font-size: 25px;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
 /*media queris mobile*/
 @media screen and (max-width: 600px) {
   .tamanoFoto {
@@ -562,6 +569,7 @@ header .header__open {
     flex-direction: column;
     font-family: "Ms Madi", cursive;
     font-size: 25px;
+    margin-top: 10rem;
     align-items: center;
     align-content: center;
     justify-content: space-evenly;

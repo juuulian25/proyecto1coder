@@ -10,22 +10,14 @@
         flex-direction: column;
     }
 
-    .flex__footer{
-        display: flex;
-        flex-direction: row;
-        font-family: $fuente__principal;
-        font-size: 25px;
-        align-items: center;
-        align-content: center;
-        justify-content: space-evenly;
-    }
+  
    
 
     .flex__links{
         display: none;        
          font-size: 25px;
          height: 55px;
-         padding-top: 80px;
+         padding-top: 11px;
          display: flex;
         justify-content: flex-end;
         align-items: flex-end;
@@ -47,18 +39,13 @@
 
     .grid_nuestas_artistas{
         display: grid;
-      
         justify-content: center ;
-        /*background-image: url(../imagenes/Shiny\ Overlay.svg);*/
-        padding: 5px;
-        border-top: 5px;
-        border-left: 5px;
-        border-width: 5px;
+        
+        padding: 1px;
+        border-top: 1px;
+        border-left: 1px;
+        border-width: 1px;
         width: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
         height: 100vh;
     
     
@@ -74,17 +61,20 @@
     }
 
     .grid__hijos_artistas{
+        display: grid;
         align-items: center;
         align-content: center;
-        padding: 1rem;
+        margin: 10px;
+        padding: 10px;
+    
         justify-content: center;
         text-align: center;
     }
-
+ 
     .indexPrueba{
         
         display: grid;
-        min-height:300px;
+        min-height: 300px;
         grid-template-columns: 30% 30% 30% ;
         grid-template-rows: 150px 150px 150px;
       
@@ -98,6 +88,7 @@
         
 
     &__hijo1{
+        display: grid;
         grid-area: ala1 ;
         font-size: 20px;
         background-color:$color__principal;
@@ -226,6 +217,18 @@
 }
 
 
+.flex__footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    font-family: $fuente__principal;
+    font-size: 25px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+
 
 /*media queris mobile*/
 
@@ -324,6 +327,7 @@
         flex-direction: column;
         font-family: $fuente__principal;
         font-size: 25px;
+        margin-top: 10rem;
         align-items: center;
         align-content: center;
         justify-content: space-evenly;
