@@ -7,7 +7,13 @@
 
 header{
     background-color: $color__principal;
-  
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    right: 0;
+    
+    
     .header__open{ /*icono*/
         display: none;
        }
@@ -17,6 +23,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+   
    
 }
 

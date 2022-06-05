@@ -55,6 +55,7 @@
   font-family: "Ms Madi", cursive;
   font-size: 40px;
   align-items: center;
+  min-width: 320px;
   justify-content: space-evenly;
 }
 
@@ -75,6 +76,11 @@
 
 header {
   background-color: #D97F89;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  right: 0;
 }
 
 header .header__open {
@@ -107,6 +113,7 @@ header .header__open {
 }
 
 .alturamain {
+  padding-top: 7rem;
   min-height: 100vh;
 }
 
@@ -124,7 +131,8 @@ header .header__open {
 }
 
 .colorFondo {
-  background-color: #FAD7D1;
+  /*background-color:#FAD7D1 ;*/
+  background-image: linear-gradient(to top, white, #fdb4bf);
 }
 
 .tamanoImg {
@@ -142,6 +150,7 @@ header .header__open {
 }
 
 .tamanoFuente {
+  margin-top: 1rem;
   font-size: 50px;
   color: black;
 }
@@ -193,10 +202,11 @@ header .header__open {
   justify-content: center;
   padding: 10px;
   border-top: 10px;
-  border-left: 10px;
   border-width: 10px;
-  width: 100%;
-  height: 100vh;
+  max-width: 90%;
+  min-height: 100vh;
+  align-items: center;
+  padding-left: 15%;
   grid-template-areas: "ela1 ela2 ela2" "ela3 ela4 ela4" "ela5 ela6 ela6";
 }
 
@@ -207,8 +217,8 @@ header .header__open {
 }
 
 .grid__hijos_img {
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 300%;
   object-fit: cover;
   border-radius: 150px;
 }
@@ -381,21 +391,22 @@ header .header__open {
   }
   .grid_nuestas_artistas {
     display: grid;
+    flex-direction: row;
     justify-content: center;
     padding: 1px;
     border-top: 1px;
-    border-left: 1px;
-    border-width: 1px;
-    width: 100%;
-    height: 100vh;
-    grid-template-areas: "ela1" "ela2" "ela3" "ela4" "ela5" "ela6";
+    max-width: 90%;
+    min-height: 90vh;
+    align-items: center;
+    padding-left: 15%;
+    grid-template-areas: "ela1 ela2 ela2" "ela3 ela4 ela4" "ela5 ela6 ela6";
   }
   .grid__hijos_artistas {
     display: grid;
     align-items: center;
     align-content: center;
-    margin: 10px;
-    padding: 10px;
+    margin: 1px;
+    padding: 1px;
     justify-content: center;
     text-align: center;
   }
@@ -458,8 +469,8 @@ header .header__open {
     padding: 1rem;
   }
   .tamanoFotoArtistas {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
   .grid {
     border: 1px;
@@ -498,12 +509,16 @@ header .header__open {
 .flex__footer {
   display: flex;
   flex-direction: row;
-  margin-top: 5rem;
+  margin-top: 1rem;
   font-family: "Ms Madi", cursive;
   font-size: 25px;
   align-items: center;
   align-content: center;
   justify-content: space-evenly;
+}
+
+.alturamain {
+  padding-top: 10rem;
 }
 
 /*media queris mobile*/
@@ -569,7 +584,7 @@ header .header__open {
     flex-direction: column;
     font-family: "Ms Madi", cursive;
     font-size: 25px;
-    margin-top: 10rem;
+    margin-top: 1rem;
     align-items: center;
     align-content: center;
     justify-content: space-evenly;
@@ -577,41 +592,39 @@ header .header__open {
   .grid_nuestas_artistas {
     display: grid;
     justify-content: center;
-    /*background-image: url(../imagenes/Shiny\ Overlay.svg);*/
-    padding: 5px;
-    border-top: 5px;
     border-left: 5px;
-    border-width: 5px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
+    border-top: 10px;
+    border-width: 10px;
+    max-width: 90%;
+    min-height: 50vh;
+    align-items: center;
+    padding-left: 15%;
     grid-template-areas: "ela1" "ela2" "ela3" "ela4" "ela5" "ela6";
   }
   .grid__hijos_artistas {
     align-items: center;
     align-content: center;
-    padding: 3px;
   }
   .grid__hijo_artistas1 {
     grid-area: ela1;
   }
   .grid__hijo_artistas2 {
     grid-area: ela2;
+    padding-bottom: 50px;
   }
   .grid__hijo_artistas3 {
     grid-area: ela3;
   }
   .grid__hijo_artistas4 {
     grid-area: ela4;
+    padding-bottom: 50px;
   }
   .grid__hijo_artistas5 {
     grid-area: ela5;
   }
   .grid__hijo_artistas6 {
     grid-area: ela6;
+    padding-bottom: 50px;
   }
   .tamanoFotoArtistas {
     width: 150px;
@@ -673,15 +686,6 @@ header .header__open {
     flex-direction: row;
     padding: 1rem;
   }
-  .flex__links {
-    display: none;
-    font-size: 25px;
-    height: 50%;
-    padding-top: 75%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
   .flex__nav {
     flex-direction: row;
     justify-content: space-between;
@@ -695,17 +699,26 @@ header .header__open {
   }
   #lateral {
     display: block;
-    background-color: rgba(0, 0, 0, 0.384);
-    width: 90%;
-    position: fixed;
-    top: 1;
-    right: -100%;
-    z-index: 100;
+    background-color: rgba(129, 2, 2, 0.384);
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    z-index: auto;
     transition: right 1.5s;
-    height: 90%;
+    height: 100vh;
   }
   #lateral:target {
     right: 0;
+  }
+  .flex__links {
+    display: none;
+    display: flex;
+    font-size: 50px;
+    height: 5%;
+    padding-top: 25%;
+    justify-content: flex-end;
+    align-items: flex-start;
   }
   .links {
     color: #D97F89;
@@ -713,7 +726,7 @@ header .header__open {
     font-size: 20px;
   }
   .link__interno {
-    height: 10vh;
+    height: 1vh;
     font-size: 20px;
   }
   .cerrar__jam {
@@ -733,6 +746,9 @@ header .header__open {
   header .header__open {
     /*icono*/
     display: block;
+  }
+  .alturamain {
+    padding-top: 6rem;
   }
 }
 

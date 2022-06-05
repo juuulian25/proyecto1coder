@@ -6,6 +6,7 @@
 
 
 .alturamain{
+padding-top: 7rem;
     min-height: 100vh;
 }
 
@@ -25,7 +26,8 @@
 }
 
 .colorFondo{
-    background-color:#FAD7D1 ;
+    /*background-color:#FAD7D1 ;*/
+    background-image: linear-gradient(to top, white,#fdb4bf);
 }
 
 
@@ -48,6 +50,7 @@
 
 
 .tamanoFuente{
+    margin-top: 1rem;
     font-size: 50px;
     color:black;
 
