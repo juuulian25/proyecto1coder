@@ -26,7 +26,7 @@
                 <a href="#lateral" class="header__open">
                     <p class="jam jam-menu"></p>              
                 </a>
-                <div class="flex__links"  id="lateral">
+                <div class="flex__links slide-top"  id="lateral">
                 <div><a class="links" href="../index.html">Home</a></div>
                 <div><a class="links" href="../pages/nuestro_arte.html">Nuestro Arte</a></div>
                 <div><a class="links"href="../pages/nuestras_artistas.html">Nuestras Artistas</a></div>
@@ -39,7 +39,7 @@
 
 <main class="alturamain">
     
-    <section class="main">
+    <section class="main separacion">
         <div>
             <h1 class="tamanoFuente fuenteTitulo">Contactanos:</h1>
         </div>
@@ -47,37 +47,27 @@
 
     <section class="container">
         <div  class="row columna__contactanos">
-            <div class="col">
-            <table>
-            <tr>
-            <form action="">
-         
-            <tr>
-                <td><label for="nombre">Ingrese su nombre</label></td>
-                <td><input type="text" name="nombre" placeholder="Ingrese su nombre"></td>
-            </tr>
-            <tr>
-                <td><label for="telefono">Ingrese su numero de telefono</label></td>
-                <td><input type="tel" name="telefono" id="telefono" placeholder="Ingrese su numero"></td>
-            </tr>
-            <tr>
-                <td><label for="email">Email:</label></td>
-                <td><input type="email" name="email" id="correo" placeholder="Ingrese su correo"></td>
-            </tr>
-            <tr>
-                <td><label for="comentarios">Comentarios:</label></td>
-                <td><textarea name="Comentarios" id="" cols="25" rows="3"placeholder="Escriba su comentario"></textarea></td>
-            </tr>
-            <tr>            
-                <td></td> <td><label for="boton"></label>
-                <input type="submit" name="boton" value="Enviar"></td>
-            </tr>
-        
-            </form>
-            </table>
+          
+            <div class="row">
+                <div class="separar">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                </div>
+                 <div class="separar">
+                  <input type="numbers" class="form-control" placeholder="Teléfono" aria-label="Telefono">
+                </div>     
+                 <div class="separar">
+                <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                 </div>        
+                 <div class="mb-3 separar">
+                  
+                    <textarea type="text" class="form-control" placeholder="Comentarios" aria-label="Comentarios"></textarea>
+                  </div>
             </div>
+            <div class="btn separar">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
 
-          <div class="col">
+          <div class="col separar">
             <iframe class="mapa__redondo" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d298.7688885126015!2d-58.56479095208242!3d-34.60525419677805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb824a7a1066d%3A0x2d1705df0d4168bf!2sValent%C3%ADn%20G%C3%B3mez%204850%2C%20B1678ABJ%20Caseros%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1652391828845!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div> 
@@ -91,7 +81,7 @@
 
 
 <footer>
-    <section class="colorFooter flex__footer ">
+    <section class="colorFooter flex__footer">
       <div class="flex__footerhijo1">
           <img src="../imagenes/dalinails.jpg" alt="logoDaliNails" class="tamanoImg redondo" >
       </div>

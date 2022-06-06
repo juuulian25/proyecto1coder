@@ -76,23 +76,23 @@
 
 /*grid*/
 .grid { 
-    border: 10px solid black;
+   
     width: 100%;
     padding: 1rem;
-   min-height: 800px;
+    min-height: 800px;
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-rows: 400px 300px 400px 300px;
     justify-content: center;
     margin: 0;
     column-gap: 5px;
     row-gap: 5px;
 
     grid-template-areas:  
-    "ele6 ele2 ele3 ele3"
-    "ele6 ele1 ele3 ele3"
-    "ele7 ele1 ele8 ele4"
-    "ele7 ele5 ele8 ele4" 
+    "ele10 ele10 ele3 ele4"
+    "ele5 ele8 ele9 ele9"
+    "ele12 ele1 ele7 ele6"
+    "ele12 ele2 ele11 ele11" ;
 
 }
 
@@ -100,7 +100,7 @@
 .grid__hijo{
    /* display: grid;*/
   
-    border-radius: 5px;
+    border-radius: 15px;
     text-align: center;
 }
 
@@ -108,7 +108,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 80px;
 }
 
 
@@ -143,6 +143,22 @@
 
 .grid__hijo8{
     grid-area: ele8;
+}
+
+.grid__hijo9{
+    grid-area: ele9;
+}
+
+.grid__hijo10{
+    grid-area: ele10;
+}
+
+.grid__hijo11{
+    grid-area: ele11;
+}
+
+.grid__hijo12{
+    grid-area: ele12;
 }
 
 .indexPrueba{

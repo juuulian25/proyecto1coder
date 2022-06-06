@@ -53,7 +53,7 @@
   display: flex;
   flex-direction: row;
   font-family: "Ms Madi", cursive;
-  font-size: 40px;
+  font-size: 50px;
   align-items: center;
   min-width: 320px;
   justify-content: space-evenly;
@@ -113,7 +113,7 @@ header .header__open {
 }
 
 .alturamain {
-  padding-top: 7rem;
+  padding-top: 1rem;
   min-height: 100vh;
 }
 
@@ -195,6 +195,60 @@ header .header__open {
   display: none;
 }
 
+.columna__contactanos {
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  margin: 1rem;
+  max-width: 1000px;
+  max-height: 1000px;
+}
+
+.alturamain {
+  padding-top: 1rem;
+}
+
+.columna__contactanos {
+  padding: 1rem;
+}
+
+.separar {
+  padding: 5px;
+}
+
+.separacion {
+  padding-bottom: 1rem;
+}
+
+.slide-top {
+  -webkit-animation: slide-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
 /*grid nuestras artistas*/
 .grid_nuestas_artistas {
   display: grid;
@@ -261,23 +315,22 @@ header .header__open {
 
 /*grid*/
 .grid {
-  border: 10px solid black;
   width: 100%;
   padding: 1rem;
   min-height: 800px;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 200px 200px 200px 200px;
+  grid-template-rows: 400px 300px 400px 300px;
   justify-content: center;
   margin: 0;
   column-gap: 5px;
   row-gap: 5px;
-  grid-template-areas: "ele6 ele2 ele3 ele3" "ele6 ele1 ele3 ele3" "ele7 ele1 ele8 ele4" "ele7 ele5 ele8 ele4";
+  grid-template-areas: "ele10 ele10 ele3 ele4" "ele5 ele8 ele9 ele9" "ele12 ele1 ele7 ele6" "ele12 ele2 ele11 ele11";
 }
 
 .grid__hijo {
   /* display: grid;*/
-  border-radius: 5px;
+  border-radius: 15px;
   text-align: center;
 }
 
@@ -285,7 +338,7 @@ header .header__open {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 80px;
 }
 
 .grid__hijo1 {
@@ -318,6 +371,22 @@ header .header__open {
 
 .grid__hijo8 {
   grid-area: ele8;
+}
+
+.grid__hijo9 {
+  grid-area: ele9;
+}
+
+.grid__hijo10 {
+  grid-area: ele10;
+}
+
+.grid__hijo11 {
+  grid-area: ele11;
+}
+
+.grid__hijo12 {
+  grid-area: ele12;
 }
 
 .indexPrueba {
@@ -473,23 +542,67 @@ header .header__open {
     height: 200px;
   }
   .grid {
+    display: grid;
     border: 1px;
     width: 100%;
-    min-height: 800px;
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 25% 25% 25% 25%;
+    min-height: 2000px;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px;
     justify-content: center;
     margin: 0;
-    row-gap: 5px;
-    padding: 10px;
-    grid-template-areas: "ele6 ele2" "ele3 ele5" "ele7 ele8" "ele4 ele1";
+    row-gap: 1px;
+    padding: 5px;
+    grid-template-areas: "ele3 ele4" "ele9 ele9" "ele5 ele1"          "ele10 ele10" "ele12 ele2" "ele11 ele11" "ele6 ele7"         "ele8 ele8";
   }
   .grid__hijo img {
     width: 95%;
     height: 95%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 100px;
+    max-height: 400px;
+  }
+  .grid__hijo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+    padding-bottom: 1rem;
+  }
+  .grid__hijo1 {
+    grid-area: ele1;
+  }
+  .grid__hijo2 {
+    grid-area: ele2;
+  }
+  .grid__hijo3 {
+    grid-area: ele3;
+  }
+  .grid__hijo4 {
+    grid-area: ele4;
+  }
+  .grid__hijo5 {
+    grid-area: ele5;
+  }
+  .grid__hijo6 {
+    grid-area: ele6;
+  }
+  .grid__hijo7 {
+    grid-area: ele7;
+  }
+  .grid__hijo8 {
+    grid-area: ele8;
+  }
+  .grid__hijo9 {
+    grid-area: ele9;
+  }
+  .grid__hijo10 {
+    grid-area: ele10;
+  }
+  .grid__hijo11 {
+    grid-area: ele11;
+  }
+  .grid__hijo12 {
+    grid-area: ele12;
   }
   .tamanoFuente {
     font-size: 45px;
@@ -500,8 +613,8 @@ header .header__open {
     font-family: 'Ms Madi', cursive;
   }
   .mapa__redondo {
-    width: 400px;
-    height: 400px;
+    width: 550px;
+    height: 300px;
     border-radius: 30px;
   }
 }
@@ -509,16 +622,55 @@ header .header__open {
 .flex__footer {
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
   font-family: "Ms Madi", cursive;
   font-size: 25px;
+  margin-top: 1rem;
   align-items: center;
   align-content: center;
-  justify-content: space-evenly;
+  text-align: center;
+}
+
+.columna__contactanos {
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  margin: 1rem;
+  max-width: 500px;
+  max-height: 500px;
 }
 
 .alturamain {
   padding-top: 10rem;
+}
+
+.columna__contactanos {
+  padding: 1rem;
+}
+
+.separar {
+  padding: 5px;
+}
+
+.separacion {
+  padding-bottom: 6rem;
+}
+
+.flex__footerhijo3 {
+  align-items: center;
+  align-content: center;
+}
+
+.flex__footerhijo2 {
+  align-items: center;
+  align-content: center;
+  padding-top: 13px;
+}
+
+.flex__footerhijo1 {
+  align-items: center;
+  align-content: center;
 }
 
 /*media queris mobile*/
@@ -583,11 +735,24 @@ header .header__open {
     display: flex;
     flex-direction: column;
     font-family: "Ms Madi", cursive;
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 1rem;
     align-items: center;
     align-content: center;
     justify-content: space-evenly;
+  }
+  .flex__footerhijo3 {
+    align-items: center;
+    align-content: center;
+  }
+  .flex__footerhijo2 {
+    align-items: center;
+    align-content: center;
+    padding-top: 1px;
+  }
+  .flex__footerhijo1 {
+    align-items: center;
+    align-content: center;
   }
   .grid_nuestas_artistas {
     display: grid;
@@ -598,7 +763,7 @@ header .header__open {
     max-width: 90%;
     min-height: 50vh;
     align-items: center;
-    padding-left: 15%;
+    padding-left: 5%;
     grid-template-areas: "ela1" "ela2" "ela3" "ela4" "ela5" "ela6";
   }
   .grid__hijos_artistas {
@@ -633,14 +798,14 @@ header .header__open {
   .grid {
     border: 1px;
     width: 100%;
-    min-height: 800px;
+    min-height: 1600px;
     display: grid;
-    grid-template-columns: 80%;
-    grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px;
+    grid-template-columns: 90%;
+    grid-template-rows: 300px 400px 300px 300px 300px 400px 400px 400px 400px 400px 400px 300px;
     justify-content: center;
     margin: 0;
     row-gap: 5px;
-    grid-template-areas: "ele6" "ele2" "ele3" "ele5" "ele7" "ele8" "ele4" "ele1";
+    grid-template-areas: "ele12" "ele4" "ele10" "ele5" "ele7" "ele2" "ele8" "ele1"      "ele9" "ele3" "ele11" "ele6";
   }
   .grid__hijo img {
     width: 95%;
@@ -672,19 +837,36 @@ header .header__open {
   .grid__hijo8 {
     grid-area: ele8;
   }
+  .grid__hijo9 {
+    grid-area: ele9;
+  }
+  .grid__hijo10 {
+    grid-area: ele10;
+  }
+  .grid__hijo11 {
+    grid-area: ele11;
+  }
+  .grid__hijo12 {
+    grid-area: ele12;
+  }
   .tamanoFuente {
     font-size: 50px;
     color: black;
   }
   .mapa__redondo {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 30px;
   }
   .columna__contactanos {
+    padding-top: 3rem;
     display: flex;
     flex-direction: row;
-    padding: 1rem;
+    align-items: center;
+    align-content: center;
+    margin: 1rem;
+    max-width: 500px;
+    max-height: 500px;
   }
   .flex__nav {
     flex-direction: row;
@@ -699,35 +881,46 @@ header .header__open {
   }
   #lateral {
     display: block;
-    background-color: rgba(129, 2, 2, 0.384);
+    background-color: rgba(255, 255, 255, 0.8);
     width: 50%;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
     top: 0;
     right: 100%;
-    z-index: auto;
+    z-index: 100;
     transition: right 1.5s;
-    height: 100vh;
   }
   #lateral:target {
     right: 0;
+  }
+  .nav__item--close {
+    display: block;
   }
   .flex__links {
     display: none;
     display: flex;
     font-size: 50px;
     height: 5%;
-    padding-top: 25%;
+    padding-top: 50%;
     justify-content: flex-end;
     align-items: flex-start;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    font-style: bold;
+  }
+  .navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
   .links {
     color: #D97F89;
-    background-color: white;
-    font-size: 20px;
-  }
-  .link__interno {
     height: 1vh;
     font-size: 20px;
+    font-size: 25px;
   }
   .cerrar__jam {
     display: block;
@@ -749,6 +942,15 @@ header .header__open {
   }
   .alturamain {
     padding-top: 6rem;
+  }
+  .columna__contactanos {
+    padding: 1rem;
+  }
+  .separar {
+    padding: 5px;
+  }
+  .separacion {
+    padding-bottom: 3rem;
   }
 }
 
