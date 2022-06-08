@@ -150,7 +150,7 @@ header .header__open {
 }
 
 .tamanoFuente {
-  margin-top: 1rem;
+  margin-top: -1rem;
   font-size: 50px;
   color: black;
 }
@@ -186,40 +186,57 @@ header .header__open {
 }
 
 .mapa__redondo {
-  width: 600px;
-  height: 600px;
+  min-width: 250px;
+  min-height: 250px;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 30px;
+  padding-bottom: 1rem;
 }
 
 .cerrar__jam {
   display: none;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  max-width: 600px;
+  padding-bottom: 7rem;
+}
+
 .columna__contactanos {
   padding-top: 10rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   align-content: center;
-  margin: 1rem;
-  max-width: 1000px;
-  max-height: 1000px;
+  max-width: 600px;
+  height: 500px;
+}
+
+.col {
+  max-width: 400px;
+  max-height: 400px;
+  min-width: 250px;
+  min-height: 250px;
 }
 
 .alturamain {
   padding-top: 1rem;
-}
-
-.columna__contactanos {
-  padding: 1rem;
+  padding-bottom: 1rem;
 }
 
 .separar {
   padding: 5px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .separacion {
-  padding-bottom: 1rem;
+  padding-bottom: 7rem;
 }
 
 .slide-top {
@@ -610,6 +627,7 @@ header .header__open {
     grid-area: ele12;
   }
   .tamanoFuente {
+    margin-top: 1rem;
     font-size: 45px;
     color: black;
   }
@@ -864,6 +882,7 @@ header .header__open {
   .tamanoFuente {
     font-size: 50px;
     color: black;
+    margin-top: 1rem;
   }
   .mapa__redondo {
     min-width: 250px;
