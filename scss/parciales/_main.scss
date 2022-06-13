@@ -1,8 +1,3 @@
-.tamano_foto_carrousel{
-    width: 200px;
-    height: 200px;
-
-}
 
 .alturamain{
     padding-top: 1rem;
@@ -25,7 +20,7 @@
 }
 
 .colorFondo{
-    /*background-color:#FAD7D1 ;*/
+
     background-image: linear-gradient(to top, white,#fdb4bf);
 }
 
@@ -49,9 +44,10 @@
 
 
 .tamanoFuente{
-    margin-top: -1rem;
+    margin-top: 7rem;
     font-size: 50px;
     color:black;
+    text-shadow: $sombra__texto;
 }
 
 .fuenteTitulo{
@@ -62,8 +58,9 @@
 
 
 .fuenteTablaArtistas{
-    font-size: 30px;
-  
+    font-size: 50px;
+    text-shadow: $sombra__texto;  
+    font-family: $fuente__principal;
 }
 
 .fuenteQuienesSomos{
@@ -72,6 +69,8 @@
     text-align: center;
     line-height: 1.8;
     font-size: 30px;
+    font-family: $fuente__principal;
+    text-shadow: $sombra__texto;
 }
 
 
@@ -152,6 +151,147 @@
 .separacion{
     padding-bottom: 7rem;
 }
+
+.flex__home{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 0.3rem;
+    border:solid 1px black;
+    text-align: center;
+    width: 100%;
+
+}
+
+.flex__home__index{
+    margin: 0.3rem;
+    max-width: 1000px;
+    
+}
+.flex__home__hijo1{
+    grid-area:hij1;
+    margin: 1rem;
+    }
+    
+    .flex__home__hijo2{
+    grid-area:hij2;
+    margin: 1rem;
+    
+    }
+    
+    .flex__home__hijo3{
+    grid-area:hij3;
+    margin: 1rem;
+    }
+
+
+.texto__home1{
+    font-family: $fuente__principal;
+    font-size:35px;
+    text-align: center;
+    text-indent: 60px;
+    text-shadow: $sombra__texto;
+}
+
+.texto__home2{
+    font-family: $fuente__principal;
+    font-size:47px;
+    text-align: right;
+    text-shadow: $sombra__texto;
+}
+
+.carousel{
+  
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.w-80{
+    max-width: 700px;
+    max-height: 460px;
+    border-radius: 50px;
+}
+
+.flex__trabajos{
+   
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: normal;
+    justify-content: space-evenly;
+    max-width: 100%;
+    height: 600px;
+   
+    
+}
+
+.card-tarjeta{
+    width: 300px; 
+    margin: 10px;
+    border-radius: 35px;
+    background-color: white;
+  
+}
+
+.card-img-top-tarjeta{
+    border-radius: 35px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.btn-tarjeta{
+   display: flex;
+  flex-direction: column;
+    width: 100px;
+    text-align: center;
+    margin-top: 35px;
+    text-decoration: none;
+   
+}
+
+.btn-primary{
+    color: rgba(0, 0, 0, 0.418);
+    background-color: #fdb4bf;
+    border-color: #fdb4bf;
+    border-radius: 10px;
+    
+}
+
+.btn-primary:hover{
+    background-color:#fdb4bf94;
+    border-color: #fdb4bf;
+}
+
+.btn-primary:active{
+    background-color: #fdb4bf;
+    border-color: #fdb4bf;
+}
+
+.btn-primary:visited{
+    background-color: #fdb4bf;
+    border-color: #fdb4bf;
+}
+
+.btn-primary:link{
+    background-color: #fdb4bf;
+    border-color: #fdb4bf;
+}
+
+
+
+
+.card-title-tarjeta{
+    padding-bottom: 35px;
+
+}
+
 
 
 .slide-top {

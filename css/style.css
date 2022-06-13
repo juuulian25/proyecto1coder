@@ -53,10 +53,11 @@
   display: flex;
   flex-direction: row;
   font-family: "Ms Madi", cursive;
-  font-size: 50px;
   align-items: center;
   min-width: 320px;
   justify-content: space-evenly;
+  text-shadow: 7px 4px 10px #fd71da;
+  font-size: 40px;
 }
 
 .colorFooter {
@@ -66,6 +67,13 @@
 .colorRedes {
   color: #D97F89;
   text-decoration: none;
+  text-shadow: 7px 4px 10px #fd71da;
+  font-size: 35px;
+}
+
+.flex__footerhijo2 {
+  text-shadow: 7px 4px 10px #fd71da;
+  font-size: 35px;
 }
 
 * {
@@ -81,6 +89,7 @@ header {
   top: 0;
   width: 100%;
   right: 0;
+  margin-bottom: 25rem;
 }
 
 header .header__open {
@@ -105,11 +114,7 @@ header .header__open {
   text-decoration: none;
   color: black;
   font-size: 17px;
-}
-
-.tamano_foto_carrousel {
-  width: 200px;
-  height: 200px;
+  text-shadow: 2px 2px 5px white;
 }
 
 .alturamain {
@@ -131,7 +136,6 @@ header .header__open {
 }
 
 .colorFondo {
-  /*background-color:#FAD7D1 ;*/
   background-image: linear-gradient(to top, white, #fdb4bf);
 }
 
@@ -150,9 +154,10 @@ header .header__open {
 }
 
 .tamanoFuente {
-  margin-top: -1rem;
+  margin-top: 7rem;
   font-size: 50px;
   color: black;
+  text-shadow: 7px 4px 10px #fd71da;
 }
 
 .fuenteTitulo {
@@ -161,7 +166,9 @@ header .header__open {
 }
 
 .fuenteTablaArtistas {
-  font-size: 30px;
+  font-size: 50px;
+  text-shadow: 7px 4px 10px #fd71da;
+  font-family: "Ms Madi", cursive;
 }
 
 .fuenteQuienesSomos {
@@ -170,6 +177,8 @@ header .header__open {
   text-align: center;
   line-height: 1.8;
   font-size: 30px;
+  font-family: "Ms Madi", cursive;
+  text-shadow: 7px 4px 10px #fd71da;
 }
 
 .fuenteIndex {
@@ -237,6 +246,130 @@ header .header__open {
 
 .separacion {
   padding-bottom: 7rem;
+}
+
+.flex__home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 0.3rem;
+  border: solid 1px black;
+  text-align: center;
+  width: 100%;
+}
+
+.flex__home__index {
+  margin: 0.3rem;
+  max-width: 1000px;
+}
+
+.flex__home__hijo1 {
+  grid-area: hij1;
+  margin: 1rem;
+}
+
+.flex__home__hijo2 {
+  grid-area: hij2;
+  margin: 1rem;
+}
+
+.flex__home__hijo3 {
+  grid-area: hij3;
+  margin: 1rem;
+}
+
+.texto__home1 {
+  font-family: "Ms Madi", cursive;
+  font-size: 35px;
+  text-align: center;
+  text-indent: 60px;
+  text-shadow: 7px 4px 10px #fd71da;
+}
+
+.texto__home2 {
+  font-family: "Ms Madi", cursive;
+  font-size: 47px;
+  text-align: right;
+  text-shadow: 7px 4px 10px #fd71da;
+}
+
+.carousel {
+  align-items: center;
+  justify-content: center;
+}
+
+.w-80 {
+  max-width: 700px;
+  max-height: 460px;
+  border-radius: 50px;
+}
+
+.flex__trabajos {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  align-items: normal;
+  justify-content: space-evenly;
+  max-width: 100%;
+  height: 600px;
+}
+
+.card-tarjeta {
+  width: 300px;
+  margin: 10px;
+  border-radius: 35px;
+  background-color: white;
+}
+
+.card-img-top-tarjeta {
+  border-radius: 35px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.btn-tarjeta {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  text-align: center;
+  margin-top: 35px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  color: rgba(0, 0, 0, 0.418);
+  background-color: #fdb4bf;
+  border-color: #fdb4bf;
+  border-radius: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #fdb4bf94;
+  border-color: #fdb4bf;
+}
+
+.btn-primary:active {
+  background-color: #fdb4bf;
+  border-color: #fdb4bf;
+}
+
+.btn-primary:visited {
+  background-color: #fdb4bf;
+  border-color: #fdb4bf;
+}
+
+.btn-primary:link {
+  background-color: #fdb4bf;
+  border-color: #fdb4bf;
+}
+
+.card-title-tarjeta {
+  padding-bottom: 35px;
 }
 
 .slide-top {
@@ -339,7 +472,7 @@ header .header__open {
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 400px 300px 400px 300px;
   justify-content: center;
-  margin: 0;
+  margin-top: 1rem;
   column-gap: 5px;
   row-gap: 5px;
   grid-template-areas: "ele10 ele10 ele3 ele4" "ele5 ele8 ele9 ele9" "ele12 ele1 ele7 ele6" "ele12 ele2 ele11 ele11";
@@ -406,54 +539,6 @@ header .header__open {
   grid-area: ele12;
 }
 
-.indexPrueba {
-  width: 100%;
-  padding: 1rem;
-  min-height: 600px;
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 200px 200px 200px;
-  justify-content: center;
-  text-align: center;
-  grid-template-areas: "ala1 ala2 ala2" "ala3 ala3 ala4" "ala5 ala5 ala6";
-}
-
-.indexPrueba__hijo1 {
-  grid-area: ala1;
-  font-size: 40px;
-  background-color: #D97F89;
-}
-
-.indexPrueba__hijo2 {
-  grid-area: ala2;
-  font-size: 40px;
-  background-color: #f57d90;
-}
-
-.indexPrueba__hijo3 {
-  grid-area: ala3;
-  font-size: 40px;
-  background-color: #f1889b;
-}
-
-.indexPrueba__hijo4 {
-  grid-area: ala4;
-  font-size: 40px;
-  background-color: #f99aaa;
-}
-
-.indexPrueba__hijo5 {
-  grid-area: ala5;
-  font-size: 40px;
-  background-color: #fdb4bf;
-}
-
-.indexPrueba__hijo6 {
-  grid-area: ala6;
-  font-size: 40px;
-  background-color: #ffcdd4;
-}
-
 /*medias queris*/
 @media screen and (max-width: 1023px) {
   * {
@@ -501,64 +586,6 @@ header .header__open {
     justify-content: center;
     text-align: center;
   }
-  .indexPrueba {
-    display: grid;
-    min-height: 300px;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 150px 150px 150px;
-    grid-template-areas: "ala1 ala2 ala2" "ala3 ala3 ala4" "ala5 ala5 ala6";
-  }
-  .indexPrueba__hijo1 {
-    display: grid;
-    grid-area: ala1;
-    font-size: 20px;
-    background-color: #D97F89;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem;
-  }
-  .indexPrueba__hijo2 {
-    grid-area: ala2;
-    font-size: 20px;
-    background-color: #f57d90;
-    align-items: center;
-    align-content: center;
-    padding: 1rem;
-  }
-  .indexPrueba__hijo3 {
-    grid-area: ala3;
-    font-size: 20px;
-    background-color: #f1889b;
-    align-items: center;
-    align-content: center;
-    padding: 1rem;
-    justify-content: center;
-    text-align: center;
-  }
-  .indexPrueba__hijo4 {
-    grid-area: ala4;
-    font-size: 20px;
-    background-color: #f99aaa;
-    align-items: center;
-    align-content: center;
-    padding: 1rem;
-  }
-  .indexPrueba__hijo5 {
-    grid-area: ala5;
-    font-size: 20px;
-    background-color: #fdb4bf;
-    align-items: center;
-    align-content: center;
-    padding: 1rem;
-  }
-  .indexPrueba__hijo6 {
-    grid-area: ala6;
-    font-size: 20px;
-    background-color: #ffcdd4;
-    align-items: center;
-    align-content: center;
-    padding: 1rem;
-  }
   .tamanoFotoArtistas {
     width: 200px;
     height: 200px;
@@ -574,7 +601,7 @@ header .header__open {
     margin: 0;
     row-gap: 1px;
     padding: 5px;
-    grid-template-areas: "ele3 ele4" "ele9 ele9" "ele5 ele1"          "ele10 ele10" "ele12 ele2" "ele11 ele11" "ele6 ele7"         "ele8 ele8";
+    grid-template-areas: "ele3 ele4" "ele9 ele9" "ele5 ele1"         "ele10 ele10" "ele12 ele2" "ele11 ele11" "ele6 ele7"         "ele8 ele8";
   }
   .grid__hijo img {
     width: 95%;
@@ -640,62 +667,54 @@ header .header__open {
     height: 400px;
     border-radius: 30px;
   }
-}
-
-.flex__footer {
-  display: flex;
-  flex-direction: row;
-  font-family: "Ms Madi", cursive;
-  font-size: 25px;
-  margin-top: 1rem;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-}
-
-.columna__contactanos {
-  padding-top: 15rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  margin: 1rem;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.alturamain {
-  padding-top: 10rem;
-}
-
-.columna__contactanos {
-  padding: 1rem;
-}
-
-.separar {
-  padding: 5px;
-  text-align: center;
-}
-
-/*
+  .flex__footer {
+    display: flex;
+    flex-direction: row;
+    font-family: "Ms Madi", cursive;
+    font-size: 25px;
+    margin-top: 1rem;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  .columna__contactanos {
+    padding-top: 15rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin: 1rem;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .alturamain {
+    padding-top: 10rem;
+  }
+  .columna__contactanos {
+    padding: 1rem;
+  }
+  .separar {
+    padding: 5px;
+    text-align: center;
+  }
+  /*
     .separacion{
         padding-bottom: 6rem;
     }
 */
-.flex__footerhijo3 {
-  align-items: center;
-  align-content: center;
-}
-
-.flex__footerhijo2 {
-  align-items: center;
-  align-content: center;
-  padding-top: 13px;
-}
-
-.flex__footerhijo1 {
-  align-items: center;
-  align-content: center;
+  .flex__footerhijo3 {
+    align-items: center;
+    align-content: center;
+  }
+  .flex__footerhijo2 {
+    align-items: center;
+    align-content: center;
+    padding-top: 13px;
+  }
+  .flex__footerhijo1 {
+    align-items: center;
+    align-content: center;
+  }
 }
 
 /*media queris mobile*/
@@ -765,8 +784,8 @@ header .header__open {
     display: flex;
     flex-direction: column;
     font-family: "Ms Madi", cursive;
-    font-size: 30px;
-    margin-top: 1rem;
+    font-size: 25px;
+    margin-top: 0.5rem;
     align-items: center;
     align-content: center;
     justify-content: space-evenly;
@@ -774,11 +793,13 @@ header .header__open {
   .flex__footerhijo3 {
     align-items: center;
     align-content: center;
+    font-size: 25px;
   }
   .flex__footerhijo2 {
     align-items: center;
     align-content: center;
     padding-top: 1px;
+    font-size: 25px;
   }
   .flex__footerhijo1 {
     align-items: center;
@@ -799,6 +820,7 @@ header .header__open {
   .grid__hijos_artistas {
     align-items: center;
     align-content: center;
+    font-size: 25px;
   }
   .grid__hijo_artistas1 {
     grid-area: ela1;
@@ -821,10 +843,12 @@ header .header__open {
     grid-area: ela6;
     padding-bottom: 50px;
   }
-  .tamanoFotoArtistas {
-    width: 150px;
-    height: 150px;
-  }
+  /*
+    .tamanoFotoArtistas{
+        width: 1500px;
+        height: 150px;
+    }
+    */
   .grid {
     border: 1px;
     width: 100%;
@@ -903,14 +927,6 @@ header .header__open {
     min-width: 250px;
     min-height: 250px;
   }
-  /*
-    .row{
-        max-width: 500px;
-        max-height: 500px;
-        min-width: 250px;
-        min-height: 250px;
-    }
-    */
   .col {
     max-width: 400px;
     max-height: 400px;
@@ -975,7 +991,7 @@ header .header__open {
     display: block;
   }
   .tamanoFuente {
-    font-size: 40px;
+    font-size: 35px;
     color: black;
   }
   .fuenteTitulo {
@@ -1005,6 +1021,78 @@ header .header__open {
   }
   .separacion {
     padding-bottom: 6rem;
+  }
+  .flex__home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 0rem;
+    margin-left: 0.02rem;
+    border: solid 1px black;
+    text-align: center;
+    width: 100%;
+    min-width: 320px;
+  }
+  .flex__home__index {
+    margin: 0.1rem;
+    min-width: 300px;
+  }
+  .flex__home__hijo1 {
+    grid-area: hij1;
+    margin: 1rem;
+  }
+  .flex__home__hijo2 {
+    grid-area: hij2;
+    margin: 1rem;
+  }
+  .flex__home__hijo3 {
+    grid-area: hij3;
+    margin: 1rem;
+  }
+  .img__home {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50px;
+  }
+  .texto__home1 {
+    font-family: "Ms Madi", cursive;
+    font-size: 25px;
+    text-align: center;
+    text-indent: 10px;
+    text-shadow: 7px 4px 10px #fd71da;
+  }
+  .texto__home2 {
+    font-family: "Ms Madi", cursive;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 7px 4px 10px #fd71da;
+  }
+  .colorRedes {
+    color: #D97F89;
+    text-decoration: none;
+    text-shadow: 7px 4px 10px #fd71da;
+    font-size: 25px;
+  }
+  .flex__footerhijo2 {
+    text-shadow: 7px 4px 10px #fd71da;
+    font-size: 25px;
+  }
+  .carousel {
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+  }
+  .w-80 {
+    max-width: 310px;
+    max-height: 200px;
+    border-radius: 50px;
+  }
+  .tamanoImg {
+    width: 80px;
+    height: 80px;
+    border-radius: 1000px;
   }
 }
 

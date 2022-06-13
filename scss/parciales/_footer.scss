@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: row;
     font-family: $fuente__principal;
-    font-size: 50px;
+  
     align-items: center;
     min-width: 320px;
     justify-content: space-evenly ;
+    text-shadow: 7px 4px 10px rgb(253, 113, 218); 
+    font-size: 40px; 
     
-  
-
 }
 
 
@@ -19,4 +19,11 @@
 .colorRedes {
     color:$color__principal;
     text-decoration: none;
+    text-shadow: 7px 4px 10px rgb(253, 113, 218);
+    font-size: 35px;  
+}
+
+.flex__footerhijo2{
+    text-shadow: 7px 4px 10px rgb(253, 113, 218);
+    font-size: 35px;  
 }

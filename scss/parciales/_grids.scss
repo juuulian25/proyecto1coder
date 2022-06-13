@@ -84,7 +84,7 @@
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 400px 300px 400px 300px;
     justify-content: center;
-    margin: 0;
+    margin-top: 1rem;
     column-gap: 5px;
     row-gap: 5px;
 
@@ -159,67 +159,4 @@
 
 .grid__hijo12{
     grid-area: ele12;
-}
-
-.indexPrueba{
-
-    width: 100%;
-    padding: 1rem;
-    
-   min-height:600px;
-    display: grid;
-
-    grid-template-columns: 30% 30% 30% ;
-    grid-template-rows: 200px 200px 200px;
-    justify-content: center;
-    text-align: center;
-    
-  
-    grid-template-areas: 
-    "ala1 ala2 ala2"
-    "ala3 ala3 ala4"
-    "ala5 ala5 ala6" 
-}
-
-.indexPrueba__hijo1{
-    grid-area: ala1 ;
-    font-size: 40px;
-    background-color:$color__principal;
-  
-    
-}
-
-.indexPrueba__hijo2{
-    grid-area: ala2 ;
-    font-size: 40px;
-    background-color: #f57d90;
-    
-}
-
-.indexPrueba__hijo3{
-    grid-area: ala3 ;
-    font-size: 40px;
-    background-color: #f1889b;
-    
-}
-
-.indexPrueba__hijo4{
-    grid-area: ala4 ;
-    font-size: 40px;
-    background-color: #f99aaa;
-    
-}
-
-.indexPrueba__hijo5{
-    grid-area: ala5 ;
-    font-size: 40px;
-    background-color: #fdb4bf;
-   
-}
-
-.indexPrueba__hijo6{
-    grid-area: ala6 ;
-    font-size: 40px;
-    background-color: #ffcdd4;
-
 }
