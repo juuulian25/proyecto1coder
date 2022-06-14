@@ -4,6 +4,7 @@
     font-family: $fuente__principal;
   
     align-items: center;
+    text-align: center;
     min-width: 320px;
     justify-content: space-evenly ;
     text-shadow: 7px 4px 10px rgb(253, 113, 218); 
@@ -24,6 +25,12 @@
 }
 
 .flex__footerhijo2{
+    text-decoration: none;
     text-shadow: 7px 4px 10px rgb(253, 113, 218);
     font-size: 35px;  
+    margin-bottom: 0;
+}
+
+.tamanoImg{
+    border-radius: 50px;
 }

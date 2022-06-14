@@ -263,6 +263,50 @@
     align-items: center;
     align-content: center;
 }
+
+.flex__trabajos{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0.05rem;
+    align-items: normal;
+    justify-content: space-evenly;
+    max-width: 100%;
+    height: 500px;
+   margin-bottom: 5rem;
+    
+}
+
+.card-tarjeta{
+    width: 250px; 
+    margin: 10px;
+    border-radius: 35px;
+    background-color: white;
+  
+}
+
+.card-img-top-tarjeta{
+    border-radius: 35px;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.btn-tarjeta{
+   display: flex;
+  flex-direction: column;
+    width: 100px;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+   
+}
+
+
+
+
 }
 
 
@@ -455,13 +499,6 @@
     }
   
 
-    /*
-    .tamanoFotoArtistas{
-        width: 1500px;
-        height: 150px;
-    }
-    */
-
 
     .grid { 
         border: 1px;
@@ -553,41 +590,6 @@
         color:rgb(0, 0, 0);
         margin-top: 1rem;
     }
-
-
-    .mapa__redondo{
-
-       min-width: 250px;
-       min-height: 250px;  
-       max-width: 100%;
-       max-height: 100%;
-      
-        border-radius: 30px;
-        
-        padding-bottom: 1rem;
-    }
-
-    .columna__contactanos{
-        display: flex;
-        padding-top: 3rem;       
-        flex-direction: row;
-        align-items: center;
-        align-content: center;
-        max-width: 500px;
-        max-height: 500px;
-        min-width: 250px;
-        min-height: 250px;
-        
-    }
-
-
-    .col{
-        max-width: 400px;
-        max-height: 400px;
-        min-width: 250px;
-        min-height: 250px;
-    }
-
 
    .flex__nav{
     flex-direction: row;
@@ -695,24 +697,52 @@ header{
 
 }
 
-.columna__contactanos{
-    padding: 0;
+.container{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     align-content: center;
+
+    text-align: center;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    padding-top: 7rem;
+    height: 80px;
+    justify-content: center;
 }
+
+.columna__contactanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center; 
+}
+
+
+.mapa__redondo{
+
+    width: 280px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.row__contactanos{
+    width: 100%;
+    padding-top: 5rem;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+   
+}
+
 
 
 .separar{
     padding: 5px;
-    max-width: 100%;
-    max-height: 100%;
+    
+    max-height: 10%;
+    text-align: center;
 }
 
-
-.separacion{
-    padding-bottom: 6rem;
-}
 
 .flex__home{
     display: flex;
@@ -723,7 +753,7 @@ header{
     justify-content: center;
     padding: 0rem;
     margin-left: 0.02rem;
-    border:solid 1px black;
+  
     text-align: center;
     
     width: 100%;
@@ -804,9 +834,63 @@ header{
     border-radius: 50px;
 }
 
+
+/*
 .tamanoImg {
-    width: 80px;
-    height: 80px;
-    border-radius: 1000px;
+    width: 800px;
+    height: 800px;
+    border-radius: 100000px;
 }
+
+*/
+.tamanoImg{
+    border-radius: 50px;
+}
+
+.flex__trabajos{
+    margin-top: 42rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.05rem;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    height: 200px;
+   margin-bottom: 42rem;
+    
+}
+
+.card-tarjeta{
+    width: 300px; 
+    margin: 10px;
+    border-radius: 35px;
+    background-color: white;
+  
+}
+
+.card-img-top-tarjeta{
+    border-radius: 35px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.btn-tarjeta{
+   display: flex;
+  flex-direction: column;
+    width: 100px;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+   
+}
+
+.row{
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+
 }
